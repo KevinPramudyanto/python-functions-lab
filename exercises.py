@@ -8,10 +8,11 @@
 # calculate_area_triangle(7, 3) should return 10.5.
 #
 # Define your function and call it below.
+
 def calculate_area_triangle(base, height):
     return (base * height) / 2
-print('Exercise 1:', calculate_area_triangle(10, 5))
 
+print('Exercise 1:', calculate_area_triangle(10, 5))
 
 # Exercise 2: Calculate Simple Interest
 #
@@ -23,11 +24,11 @@ print('Exercise 1:', calculate_area_triangle(10, 5))
 # simple_interest(1500, 3.5, 5) should return 262.5.
 #
 # Define your function and call it to see the result.
+
 def simple_interest(principal, rate, time):
     return (principal * rate * time) / 100
+
 print('Exercise 2:', simple_interest(1000, 5, 2))
-
-
 
 # Exercise 3: Apply a Discount
 #
@@ -39,11 +40,11 @@ print('Exercise 2:', simple_interest(1000, 5, 2))
 # apply_discount(80, 10) should return 72.
 #
 # Define your function and call it to display the discounted price.
+
 def apply_discount(price, discount):
     return price * (100 - discount) / 100
+
 print('Exercise 3:', apply_discount(100, 25))
-
-
 
 # Exercise 4: Convert Temperature
 #
@@ -58,15 +59,15 @@ print('Exercise 3:', apply_discount(100, 25))
 # convert_temperature(32, 'F') should return 0.0.
 #
 # Define the function and then call it below.
+
 def convert_temperature(temperature, unit):
     if unit=='C':
         return (temperature * 9/5) + 32
     elif unit=='F':
         return (temperature - 32) * 5/9
+
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
 print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
-
-
 
 # Exercise 5: Sum to N
 #
@@ -77,14 +78,14 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 # sum_to(10) should return 55.
 #
 # Define the function and then call it below.
+
 def sum_to(n):
     total = 0
     for i in range(1,n+1):
         total += i
     return total
+
 print('Exercise 5:', sum_to(6))
-
-
 
 # Exercise 6: Find the Largest Number
 #
@@ -95,6 +96,7 @@ print('Exercise 5:', sum_to(6))
 # largest(10, 4, 2) should return 10.
 #
 # Define your function and test it with different inputs.
+
 def largest(a,b,c):
     if a >= b:
         if a >= c:
@@ -108,8 +110,6 @@ def largest(a,b,c):
             return c
 print('Exercise 6:', largest(1, 2, 3))
 
-
-
 # Exercise 7: Calculate a Tip
 #
 # Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
@@ -119,11 +119,10 @@ print('Exercise 6:', largest(1, 2, 3))
 # calculate_tip(50, 20) should return 10.
 #
 # Write your function and test its output below.
+
 def calculate_tip(bill, tip):
     return bill * tip / 100
 print('Exercise 7:', calculate_tip(50, 20))
-
-
 
 # Exercise 8: Calculate Product of Numbers
 #
@@ -135,14 +134,14 @@ print('Exercise 7:', calculate_tip(50, 20))
 # product(2, 5, 5) should return 50.
 #
 # Define the function and call it with different sets of numbers to test.
+
 def product(*args):
     total = 1
     for arg in args:
         total *= arg
     return total
+
 print('Exercise 8:', product(2, 5, 5))
-
-
 
 # Exercise 9: Basic Calculator
 #
@@ -158,6 +157,7 @@ print('Exercise 8:', product(2, 5, 5))
 # basicCalculator(10, 5, 'divide') should return 2.
 #
 # Define the function and then call it below.
+
 def basicCalculator(num1, num2, str):
     if str == 'add':
         return num1 + num2
@@ -167,4 +167,5 @@ def basicCalculator(num1, num2, str):
         return num1 * num2
     elif str == 'divide':
         return num1 / num2
+        
 print('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))
